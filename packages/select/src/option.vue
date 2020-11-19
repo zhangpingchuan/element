@@ -37,7 +37,9 @@
       disabled: {
         type: Boolean,
         default: false
-      }
+      },
+      background: String,
+      color: String
     },
 
     data() {
@@ -61,6 +63,14 @@
 
       currentValue() {
         return this.value || this.label || '';
+      },
+
+      currentBackGround() {
+        return this.background;
+      },
+
+      currentColor() {
+        return this.color;
       },
 
       itemSelected() {
